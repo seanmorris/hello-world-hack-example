@@ -1,0 +1,35 @@
+{
+    "name": "hello-world",
+    "displayName": "%displayName%",
+    "description": "%description%",
+    "version": "0.0.1",
+    "publisher": "Sean Morris",
+    "license": "Apache-2.0",
+    "engines": {
+        "vscode": "*"
+    },
+    "scripts": {
+        "compile": "npx babel index.js --out-dir dist/"
+    },
+    "activationEvents": [
+        "*"
+    ],
+    "browser": "dist/index",
+    "main": "dist/index",
+    "hacks": ["alert-hack.js"],
+    "devDependencies": {
+        "@babel/cli": "^7.24.8"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "command": "hello-world.alert",
+                "title": "hello-world.alert"
+            },
+            {
+                "command": "hello-world.prompt",
+                "title": "hello-world.prompt"
+            }
+        ]
+    }
+}
