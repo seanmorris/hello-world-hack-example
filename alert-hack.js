@@ -1,5 +1,5 @@
 config => {
-    // These commands won't be users accessible
+    // These commands won't be user accessible
     // since they don't implement the `label` property.
     config.commands.push(
         {
